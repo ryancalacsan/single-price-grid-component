@@ -1,115 +1,115 @@
 @use "../abstracts/" as *;
 
 .grid {
-    box-shadow: 0px 15px 30px 0px hsla(212, 100%, 33%, 14.88%);
-    max-width: 400px;
+    box-shadow: 0rem 0.9375rem 1.875rem 0rem hsla(212, 100%, 33%, 14.88%);
+    max-width: 25rem;
     margin: 0 auto;
 
     @include breakpoint-up(medium) {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 216px 259px;
+        grid-template-rows: 13.5rem 16.1875rem;
         grid-template-areas:
             "header header"
             "subscription why";
-        max-width: 635px;
+        max-width: 39.6875rem;
     }
     &__header {
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        padding: 28px 24px 32px 24px;
+        border-top-left-radius: 0.3125rem;
+        border-top-right-radius: 0.3125rem;
+        padding: 1.75rem 1.5rem 2rem 1.5rem;
         background-color: $white;
         @include breakpoint-up(medium) {
             grid-area: header;
-            padding: 40px;
+            padding: 2.5rem;
         }
         &-title {
             color: $cyan;
-            font-size: 20px;
+            font-size: 1.25rem;
             font-weight: $bold;
-            line-height: 23px;
-            letter-spacing: -0.25px;
-            margin-bottom: 24px;
+            line-height: 1.4375rem;
+            letter-spacing: -0.0156rem;
+            margin-bottom: 1.5rem;
 
             @include breakpoint-up(medium) {
-                font-size: 24px;
-                line-height: 28px;
-                letter-spacing: -0.3px;
+                font-size: 1.5rem;
+                line-height: 1.75rem;
+                letter-spacing: -0.0187rem;
             }
         }
 
         &-tagline {
             color: $bright-yellow;
-            font-size: 15px;
+            font-size: 0.9375rem;
             font-weight: $bold;
-            line-height: 20px;
-            letter-spacing: 0.19px;
-            margin-bottom: 16px;
+            line-height: 1.25rem;
+            letter-spacing: 0.0119rem;
+            margin-bottom: 1rem;
 
             @include breakpoint-up(medium) {
-                font-size: 18px;
-                line-height: 21px;
-                letter-spacing: -0.22px;
-                margin-bottom: 11px;
+                font-size: 1.125rem;
+                line-height: 1.3125rem;
+                letter-spacing: -0.0138rem;
+                margin-bottom: 0.6875rem;
             }
         }
 
         &-text {
             color: $Grayish-blue;
-            font-size: 14px;
-            line-height: 26px;
-            letter-spacing: -0.17px;
+            font-size: 0.875rem;
+            line-height: 1.625rem;
+            letter-spacing: -0.0106rem;
 
             @include breakpoint-up(medium) {
-                font-size: 16px;
-                letter-spacing: -0.2px;
+                font-size: 1rem;
+                letter-spacing: -0.0125rem;
             }
         }
     }
 
     &__subscription {
-        padding: 24px;
+        padding: 1.5rem;
         color: $white;
         background-color: $cyan;
 
         @include breakpoint-up(medium) {
             grid-area: subscription;
-            padding: 40px;
+            padding: 2.5rem;
         }
 
         &-title {
-            font-size: 18px;
-            line-height: 21px;
-            letter-spacing: -0.22px;
-            margin-bottom: 18px;
+            font-size: 1.125rem;
+            line-height: 1.3125rem;
+            letter-spacing: -0.0138rem;
+            margin-bottom: 1.125rem;
             font-weight: $bold;
         }
 
         &-price {
             display: inline-block;
             font-weight: $bold;
-            font-size: 32px;
-            line-height: 37px;
-            letter-spacing: -0.4px;
+            font-size: 2rem;
+            line-height: 2.3125rem;
+            letter-spacing: -0.025rem;
             vertical-align: middle;
-            margin-bottom: 4px;
-            margin-right: 11px;
+            margin-bottom: 0.25rem;
+            margin-right: 0.6875rem;
         }
 
         &-price-per {
             opacity: 50%;
             display: inline-block;
             vertical-align: middle;
-            margin-bottom: 9px;
-            font-size: 16px;
-            letter-spacing: -0.2px;
-            line-height: 26px;
+            margin-bottom: 0.5625rem;
+            font-size: 1rem;
+            letter-spacing: -0.0125rem;
+            line-height: 1.625rem;
         }
 
         &-text {
-            letter-spacing: -0.2px;
-            line-height: 26px;
-            margin-bottom: 26px;
+            letter-spacing: -0.0125rem;
+            line-height: 1.625rem;
+            margin-bottom: 1.625rem;
         }
 
         &-btn {
@@ -117,29 +117,29 @@
             color: $white;
             background-color: $bright-yellow;
             border: none;
-            border-radius: 5px;
+            border-radius: 0.3125rem;
             font-weight: $bold;
-            letter-spacing: -0.2px;
-            padding-top: 15px;
-            padding-bottom: 14px;
-            box-shadow: 0px 10px 10px 0px hsla(0, 0%, 0%, 9.73%);
+            letter-spacing: -0.0125rem;
+            padding-top: 0.9375rem;
+            padding-bottom: 0.875rem;
+            box-shadow: 0rem 0.625rem 0.625rem 0rem hsla(0, 0%, 0%, 9.73%);
         }
     }
 
     &__why {
-        padding: 24px;
+        padding: 1.5rem;
         color: $white;
         background-color: $light-cyan;
         @include breakpoint-up(medium) {
             grid-area: why;
-            padding: 40px;
+            padding: 2.5rem;
         }
 
         &-title {
-            font-size: 18px;
-            line-height: 21px;
-            letter-spacing: -0.22px;
-            margin-bottom: 18px;
+            font-size: 1.125rem;
+            line-height: 1.3125rem;
+            letter-spacing: -0.0138rem;
+            margin-bottom: 1.125rem;
             font-weight: $bold;
         }
 
@@ -150,9 +150,9 @@
 
             &-item {
                 opacity: 75%;
-                font-size: 14px;
-                letter-spacing: -0.17px;
-                line-height: 20px;
+                font-size: 0.875rem;
+                letter-spacing: -0.0106rem;
+                line-height: 1.25rem;
             }
         }
     }
