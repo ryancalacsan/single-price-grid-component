@@ -1,0 +1,40 @@
+@use "../abstracts" as *;
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    font-weight: $regular;
+    background-color: $light-gray;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+button {
+    transition: background-color 150ms ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsla(71, 73%, 64%, 100%);
+}

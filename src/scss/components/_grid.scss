@@ -1,0 +1,159 @@
+@use "../abstracts/" as *;
+
+.grid {
+    box-shadow: 0px 15px 30px 0px hsla(212, 100%, 33%, 14.88%);
+    max-width: 400px;
+    margin: 0 auto;
+
+    @include breakpoint-up(medium) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 216px 259px;
+        grid-template-areas:
+            "header header"
+            "subscription why";
+        max-width: 635px;
+    }
+    &__header {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 28px 24px 32px 24px;
+        background-color: $white;
+        @include breakpoint-up(medium) {
+            grid-area: header;
+            padding: 40px;
+        }
+        &-title {
+            color: $cyan;
+            font-size: 20px;
+            font-weight: $bold;
+            line-height: 23px;
+            letter-spacing: -0.25px;
+            margin-bottom: 24px;
+
+            @include breakpoint-up(medium) {
+                font-size: 24px;
+                line-height: 28px;
+                letter-spacing: -0.3px;
+            }
+        }
+
+        &-tagline {
+            color: $bright-yellow;
+            font-size: 15px;
+            font-weight: $bold;
+            line-height: 20px;
+            letter-spacing: 0.19px;
+            margin-bottom: 16px;
+
+            @include breakpoint-up(medium) {
+                font-size: 18px;
+                line-height: 21px;
+                letter-spacing: -0.22px;
+                margin-bottom: 11px;
+            }
+        }
+
+        &-text {
+            color: $Grayish-blue;
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: -0.17px;
+
+            @include breakpoint-up(medium) {
+                font-size: 16px;
+                letter-spacing: -0.2px;
+            }
+        }
+    }
+
+    &__subscription {
+        padding: 24px;
+        color: $white;
+        background-color: $cyan;
+
+        @include breakpoint-up(medium) {
+            grid-area: subscription;
+            padding: 40px;
+        }
+
+        &-title {
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: -0.22px;
+            margin-bottom: 18px;
+            font-weight: $bold;
+        }
+
+        &-price {
+            display: inline-block;
+            font-weight: $bold;
+            font-size: 32px;
+            line-height: 37px;
+            letter-spacing: -0.4px;
+            vertical-align: middle;
+            margin-bottom: 4px;
+            margin-right: 11px;
+        }
+
+        &-price-per {
+            opacity: 50%;
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 9px;
+            font-size: 16px;
+            letter-spacing: -0.2px;
+            line-height: 26px;
+        }
+
+        &-text {
+            letter-spacing: -0.2px;
+            line-height: 26px;
+            margin-bottom: 26px;
+        }
+
+        &-btn {
+            width: 100%;
+            color: $white;
+            background-color: $bright-yellow;
+            border: none;
+            border-radius: 5px;
+            font-weight: $bold;
+            letter-spacing: -0.2px;
+            padding-top: 15px;
+            padding-bottom: 14px;
+            box-shadow: 0px 10px 10px 0px hsla(0, 0%, 0%, 9.73%);
+        }
+    }
+
+    &__why {
+        padding: 24px;
+        color: $white;
+        background-color: $light-cyan;
+        @include breakpoint-up(medium) {
+            grid-area: why;
+            padding: 40px;
+        }
+
+        &-title {
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: -0.22px;
+            margin-bottom: 18px;
+            font-weight: $bold;
+        }
+
+        &-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            &-item {
+                opacity: 75%;
+                font-size: 14px;
+                letter-spacing: -0.17px;
+                line-height: 20px;
+            }
+        }
+    }
+}

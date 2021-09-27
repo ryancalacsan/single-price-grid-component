@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+main {
+    padding: 72px 32px 62px 32px;
+
+    @include breakpoint-up(medium) {
+        padding-top: 163px;
+    }
+}
